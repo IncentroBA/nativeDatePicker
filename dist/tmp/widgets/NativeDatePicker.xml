@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="incentro.nativedatepicker.NativeDatePicker" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Native Date Picker</name>
+    <description>A native date picker</description>
+    <icon>iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAAHdbkFIAAAACXBIWXMAAAsSAAALEgHS3X78AAADzUlEQVR4nO1bS1IbMRBtU2zYmROE3IA5AbDz0uxVFbLIPjcAbpAbBKp6SRVesrN9AnyDkBPAjmVSclpDT4++Y88ntl4VYDQ90uueVndLGkMII31dKfVHyC0A4Dx4dxRGRmgye5fDwNP0aHQQ6iUosAWSxgaIOGL2uACA+fqTxUgl9LUgyUP9y2aDNR6+hdWMG0Kb1EWydoFrpVWnthsAuKbmN0Q8rlDwmcLcZPtcMojowIlDTtdpTgu0XaIeVAj9d7CpEfnT2YABh8ORam1lB0qpnwBwxRvF5PO2HdDNt/ofOWKoDbgjuSi62mQH10qpa5eQD6YDrcJNyo1GpVKFyeydT1kveHzYgbmwAx2Uj/FpeqQfY5IvmA4KAHhu6olOHzdQSk0B4FE0HyNiLZhYZvYLIn6OIkDJ50xcHwPAKX2+pb9G04WQPSX5FwC4B4BPjIyU1bjUShxCNWC90E/b0EXWqzaADEf3MigopbRmz0xzp1lZCjeyM0S8tMiVgbUWDyUQcRXjK/BPNtmTJYHGcbUpJIHkuNwEwUeQEttTYKsTO6i0/cgEMgHrLGiaGrdBoPNAlBFTkPwCgBPWdIeIXy1yY0qxHDrnz3z9e2eBUupVDK5xRWlXQg4OlkqqBrOeGTuEze7MHQD8BoAvREiXYyuHrKycVpa14NIkvdhF5gUiLpRS89CWkW1Z6MD6UUphWbu1YYET81g12UocQMQL/j9zwMoaluqGH0LWKFGJI4hYCLlKqvc6IdV+0otrg8OH6WVBW0g5iZiasFZUBggnYVjJaJN9q6YYlgV8+yHbQtIs6AKusrwNX7ilQqeCXBNmAplAJpAJZAKu1XHradkgl2TGApsfo6UjWLJndIGNZpvjMMWFFS2yve5GOwVzdk4SQnAPxIfGUUApdZ6gPJBCMfKPCcqv5YlLI/ATq1TL27DeRmF9BrdTIrDgmxak7HyD/iqeyMOwbYdrF3FqTuu0btwDZA7yHh2xk7wULOQWlKXfJl5T0MGeq8/a6ZPZBGgcA2jAIiGHrkLKw8cenVMZgbeQ8iEEt8cCZPXAxxGiqf12ViT0Xgv2DZ8H7MWxUfYAzzWdz5cdcmkTZ67M4jPAsos3KLoApcFkA1Qwmb2P6bhoPHB9dWq8e5oeRaXnlDT4vY1XWVrCOPaFg70PgtkAA+DQK7IBBsChV2QDDIBDr8gGGACHXpENMAAOvSJlLVB7TW3AiOYabQBaXe3E8pjDZ4Azxxuy/yPkV5RKcAPI71Gfb+971YNDeXpVBkHajy8cX7zaJcWLmPOJ/QAA/AVl6XRuAqBPAgAAAABJRU5ErkJggg==</icon>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="inputDate" type="attribute">
+                <caption>Date</caption>
+                <description/>
+                <attributeTypes>
+                    <attributeType name="DateTime"/>
+                </attributeTypes>
+            </property>
+            <property key="inputMinimumDate" type="attribute" required="false">
+                <caption>Minimum Date</caption>
+                <description>Minimum selectable date.</description>
+                <attributeTypes>
+                    <attributeType name="DateTime"/>
+                </attributeTypes>
+            </property>
+            <property key="inputMaximumDate" type="attribute" required="false">
+                <caption>Maximum Date</caption>
+                <description>Maximum selectable date.</description>
+                <attributeTypes>
+                    <attributeType name="DateTime"/>
+                </attributeTypes>
+            </property>
+            <property key="pickerMode" type="enumeration" defaultValue="datetime">
+                <caption>Mode</caption>
+                <description>The date picker mode.</description>
+                <enumerationValues>
+                    <enumerationValue key="datetime">datetime</enumerationValue>
+                    <enumerationValue key="date">date</enumerationValue>
+                    <enumerationValue key="time">time</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="textColor" type="string" defaultValue="#000000">
+                <caption>Text color</caption>
+                <description/>
+            </property>
+            <property key="displayModal" type="boolean" defaultValue="false">
+                <caption>Modal</caption>
+                <description>Indicating if modal should be used.</description>
+            </property>
+            <systemProperty key="Editability"/>
+        </propertyGroup>
+    </properties>
+</widget>

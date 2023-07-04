@@ -1,0 +1,5 @@
+{
+  "nativeDependencies": {
+    "react-native-date-picker": "4.2.13"
+  }
+}
